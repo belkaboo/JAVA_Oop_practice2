@@ -12,12 +12,12 @@ public class Market implements MarketBehaviour, QueueBehaviour {
 
     @Override
     public void acceptToMarket(Actor actor) {
-        System.out.println(actor.getName() + " -  в магазине");
+        System.out.println(actor.getName() + " - в магазине");
     }
 
     @Override
     public void takeInQueue(Actor actor) {
-        System.out.println(actor.getName() + " - в Очереди");
+        System.out.println(actor.getName() + " - в очереди");
         queue.add(actor);
     }
 
